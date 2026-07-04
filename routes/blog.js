@@ -1,12 +1,11 @@
 import express from 'express';
-
+import fs from 'fs'
 const router = express.Router();
 
-const timeLog = (req, res, next) => {
-  console.log('Time: ', Date.now());
-  next();
-};
-router.use(timeLog);
+app.use((req, res, next) => {
+  fs.appendFileSync("logBlog.txt", `The type of request on ${new Date().toLocaleString("en-IN")} is a ${req.method}\n`)
+  next()
+})
 // define the home page route
 router.get('/', (req, res) => {
   res.send('Blog home page');

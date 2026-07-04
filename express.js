@@ -3,6 +3,7 @@ import blog from "./routes/blog.js"
 import fs from 'fs';
 const app = express();
 const port = 3000;
+
 app.use((req, res, next) => {
   fs.appendFileSync("log.txt", `The type of request on ${new Date().toLocaleString("en-IN")} is a ${req.method}\n`)
   next()
