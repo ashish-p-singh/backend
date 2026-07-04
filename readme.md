@@ -51,21 +51,3 @@ I use this repository to store my notes, practice code, experiments, and project
 ---
 
 ## 📁 Repository Structure
-
-```text
-backend/
-├── node/
-│   ├── basics/
-│   ├── modules/
-│   ├── file-system/
-│   └── http/
-│
-├── express/
-│   ├── basics/
-│   ├── routing/
-│   ├── middleware/
-│   └── rest-api/
-│
-├── projects/
-│
-└── README.md
