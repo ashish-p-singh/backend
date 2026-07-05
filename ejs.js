@@ -1,6 +1,6 @@
 import express from 'express'
 let app=express()
-const port=process.env.PORT;
+const port=3000;
 app.set("view engine","ejs")
 app.get('/',(req,res)=>{
     let siteName="Ashish"

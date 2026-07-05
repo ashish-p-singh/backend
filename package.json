@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ejs.js"
+    "start": "nodemon mongoose.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "dependencies": {
     "ejs": "^6.0.1",
     "express": "^5.2.1",
+    "mongoose": "^9.7.3",
     "nodemon": "^3.1.14",
     "pg": "^8.22.0"
   }
